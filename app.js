@@ -22,6 +22,15 @@ const app = Vue.createApp({
       } else {
         this.name = '';
       }
+    },
+
+    confirmInput() {
+      this.confirmedName = this.name;
+      console.log(this.confirmedName);
+    },
+
+    submitForm() {
+      console.log('Submitted!');
     }
   }
 });
