@@ -9,7 +9,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/vue@next" defer></script>
+    <script
+      src="https://unpkg.com/vue@3.2.24/dist/vue.global.js"
+      defer
+    ></script>
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -18,8 +21,8 @@
     </header>
     <section id="events">
       <h2>Events in Action</h2>
-      <button>Add</button>
-      <button>Remove</button>
+      <button v-on:click="counter++">Increase</button>
+      <button v-on:click="counter--">Decrease</button>
       <p>Result: {{ counter }}</p>
     </section>
   </body>
